@@ -15,7 +15,7 @@ tags: [beginner, helloworld]
 下面试试代码高亮功能
 -------------------
 	
-{% highlight lua linenos %}
+``` lua linenos
 -- Does a simple tokenization of html data. Returns the data as a list of tokens. 
 -- Each token is a table with a type field (which is either "tag" or "text") and
 -- a text field (which contains the original token data).
@@ -49,19 +49,23 @@ function tokenize_html(html)
 	end
 	return tokens
 end
-{% endhighlight %}
+```
 
-{% highlight java %}
+``` java
 NullPointerException at org.springframework.core.GenericTypeResolver.getTypeVariableMap
-{% endhighlight %}
+```
 
-{% highlight text %}
+```
 python ez_setup.py setuptools-0.6c11-py2.6.egg
-{% endhighlight %}
+```
 
 图片一张
 ------------------------------
 ![王国之心](https://lh6.googleusercontent.com/-bLnw-E0z_SA/T2vlXSehfMI/AAAAAAAAAW4/K14Rb-6K5YQ/s620/2-1.jpg)
+
+再来张大图
+![两只小猫](https://www.filepicker.io/api/file/RD4g9YWgQ4CiUCwnvlr4)
+
 
 最后测试以下插入gist
 --------------------------------

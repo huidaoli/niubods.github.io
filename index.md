@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: 牛叔的杂货铺 - 首页
+tagline: 生命不止，折腾不息
 ---
 {% include JB/setup %}
 
