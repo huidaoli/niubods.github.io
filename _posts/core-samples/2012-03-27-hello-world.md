@@ -15,7 +15,7 @@ tags: [beginner, helloworld]
 下面试试代码高亮功能
 -------------------
 	
-``` lua linenos
+``` lua
 -- Does a simple tokenization of html data. Returns the data as a list of tokens. 
 -- Each token is a table with a type field (which is either "tag" or "text") and
 -- a text field (which contains the original token data).
