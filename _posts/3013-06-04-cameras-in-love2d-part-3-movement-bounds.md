@@ -14,7 +14,6 @@ excerpt: >
 
 ### 实现
 
-We're going to achieve this by clamping the x/y coordinates of the camera to the minimum and maximum x/y values given (the bounds). We'll do this using a handy little clamping function, which I've named math.clamp:
 我们会通过限制摄像机的x/y座标到给定的最大和最小x/y值（边界）来实现。我们使用一个小巧便捷的夹具函数来做这个，这个函数我命名为 `math.clamp`：
 
 ``` lua
@@ -23,7 +22,6 @@ function math.clamp(x, min, max)
 end
 ```
 
-That's a very compact version however, you may want to use this version for more clarity, if you're still getting to grips with some of the subtleties of Lua:
 不过这是一个非常紧凑的版本，如果你对Lua的一些精妙之处不是很熟的话，你可能倾向于用这个更清晰的版本：
 
 ``` lua
@@ -41,7 +39,6 @@ end
 
 **[摄像机模块的代码](https://gist.github.com/961685#file_camera.lua)**
 
-Here's what has changed from part 1's camera module:
 我们和第一部分的 `camera` 模块对比一下看改变了哪些地方： 
 
 * x/y的值现在储存在 `camera._x`/`camera._y` 中而不是 `camera.x`/`camera.y` 。 在 `camera` 模块中引用这些变量的方法也相应改变。
@@ -63,8 +60,6 @@ Here's what has changed from part 1's camera module:
 `love.load` 建立了一些玩家要用的table，围墙（只是一个方框），和一些随机的白色方块（用来能看出你在移动）。`love.update` 干了些什么就非常显而易见了，允许玩家通过方向键来移动并且把玩家定位在摄像机的中心。`love.draw` 不过是将包含在这些table中的信息画出来而已。
 
 那么作为最重要的部分。在 `love.load` 中我们调用了 `setBounds` 传入了一个最小 x/y 位置 0, 0，还有将屏幕的宽和高作为最大值。 0, 0 来自于方框的 x/y 位置，但是 `width` 和 `height` 是哪来的？好吧，方框的右下角是 `width * 2`, `height * 2`。我们想让摄像机最远能到右下角，而且因为摄像机的“宽”和“高”和屏幕的宽和高是相等的， x/y 的最大值等于 `width * 2 - width`, `height * 2 - height`，或者 `boxWidth - cameraWidth`, `boxHeight - cameraHeight`，也就当然等于 `width`, `height`。
-
-ConclusionWell, that's all folks. I hope you've learnt something, and thanks for reading. If you've got any thoughts/comments/suggestions, please leave them in the comments section. Also remember the camera module and example code is a available at gist #961685.
 
 ## 总结
 
