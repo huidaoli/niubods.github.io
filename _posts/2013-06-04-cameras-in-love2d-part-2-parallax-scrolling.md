@@ -33,7 +33,6 @@ function camera:newLayer(scale, func)
   table.sort(self.layers, function(a, b) return a.scale < b.scale end)
 end
 ```
-This is how we'll create new layers. scale is what the camera's x and y position are multiplied by before drawing the layer. func is a function which will draw the objects on that layer. We then have to sort the layers table by their scale, so ones with a lower scale will be drawn first; as in, the further away the layer, the earlier is will be drawn.
 这样我们就创建了新的图层。`scale` 是在绘制图层之前摄像机的 `x` 和 `y` 位置要乘上的值。`func` 是要在图层上绘制物体的函数。之后我们还要根据 `scale` 对图层排序，这样较小的 `scale` 会首先绘制；也就是说，图层越远，就越早被绘制。
 
 接下来添加这个方法：
@@ -52,7 +51,6 @@ function camera:draw()
  end
 ```
 
-The function takes care of drawing all the layers. bx and by are the "base" x/y position, as in the original position of the camera. Before calling camera:set and the drawing function, we multiply the camera's position by the layer's scale. We then do the usual drawing steps.
 这个函数负责绘制所有图层。`bx` 和 `by` 是“基本（base）”的 x/y 位置，在摄像机的初始位置。在调用 `camera:set` 和绘制函数之前，我们将摄像机的位置乘上图层的 `scale` 。然后我们进行通常的绘制步骤。
 
 那么一切就绪之后，我们的 `love.draw` 定义将变成：
@@ -64,7 +62,7 @@ end
 ```
 
 ## 一个简单的例子
-I made a quick example to show off the parallax system. Here's the code for it:
+
 我做了一个简单的例子来展示这个视差系统。这是它的代码：
 
 ``` lua
