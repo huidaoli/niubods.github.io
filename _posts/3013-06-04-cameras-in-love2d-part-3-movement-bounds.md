@@ -4,7 +4,7 @@ title: Love2D中的摄像机 第三部分：活动边界
 category: 文章翻译
 tags: [love2d, lua, 游戏开发]
 excerpt: >
-因为在本系列的第三部分中有些有趣的东西，我就把它写出来了，而在这部分里我们会涉及到创建摄像机无法越过的界限。确保在继续阅读之前你已经读过了第一部分和第二部分...
+  因为在本系列的第三部分中有些有趣的东西，我就把它写出来了，而在这部分里我们会涉及到创建摄像机无法越过的界限。确保在继续阅读之前你已经读过了第一部分和第二部分...
 ---
 原文：[Cameras in Love2D Part 3: Movement Bounds](http://nova-fusion.com/2011/05/09/cameras-in-love2d-part-3-movement-bounds/)，请自备梯子。
 

@@ -4,7 +4,7 @@ title: Love2D中的摄像机 第一部分：基础
 category: 文章翻译
 tags: [love2d, lua, 游戏开发]
 excerpt: >
-这是几篇关于如何在 LÖVE引擎中创建摄像机的博客中的第一篇。本部分将会设计创建一个摄像机的基本原理。第二部分会涉及视差卷动和创建图层...
+  这是几篇关于如何在 LÖVE引擎中创建摄像机的博客中的第一篇。本部分将会设计创建一个摄像机的基本原理。第二部分会涉及视差卷动和创建图层...
 ---
 原文：[Cameras in Love2D Part 1: The Basics](http://nova-fusion.com/2011/04/19/cameras-in-love2d-part-1-the-basics/) ，请自备梯子。
 
